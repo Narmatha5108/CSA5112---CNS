@@ -72,3 +72,10 @@ int main(void)
     return 0;
 }
 ```
+Which would you choose?
+(a) For security:
+        Choose 3DES over DES, because 3DES applies the DES operation three times and provides greater resistance to brute-force attacks than single DES. However, AES is the better modern choice.
+(b) For performance:
+        Choose DES, because it performs only one DES operation per block, whereas 3DES performs three. DES is faster but is insecure and should not be used for protecting real data.
+Result
+        Thus, CBC-mode encryption combines each plaintext block with the previous ciphertext block before encryption. 3DES offers better security than DES but has lower performance.
